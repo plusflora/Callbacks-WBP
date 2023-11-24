@@ -50,10 +50,10 @@ const updateUserCouponSent = (user) => {
  */
 
 function sendAllCoupons(users, canSendCoupon, sendCoupon, updateUserCouponSent){ //remember to read the assignment. these arguments are provided
-  users.forEach(function(user) { 
+  users.forEach(function(user) {  //for each user in 'users' 
     if (canSendCoupon(user)) { //we're stating that if the user is flagged for canSendCoupon we send a coupon and update their status of a coupon being sent
       sendCoupon(user)
-      updateUserCouponSent(user) 
+      updateUserCouponSent(user) //it's all a matryoshkas
     }
   }) //count your brackets homie
 }

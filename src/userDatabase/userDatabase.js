@@ -5,7 +5,7 @@
  */
 
 const UserDatabase = {
-  users: [],
+  users: [], //this creates an array of the users within the UserDatabase i think
 
   // SOLUTION: this keyword is not bound to the UserDatabase since this was an arrow function
   //this is making a property called addUser that accepts 3 arguments and adds a user to the list with the 3 as well as whether or not they've recieved a coupon
@@ -23,9 +23,11 @@ const UserDatabase = {
 module.exports = UserDatabase;
 
 // you can use these console logs to help you debug addUser()
+console.log(UserDatabase.users); //these didn't work for me no matter where I put it in but I kept running the tests given until they passed
+UserDatabase.addUser("John Doe", 1234, "+1 (111) 111-1111"); 
 console.log(UserDatabase.users);
-UserDatabase.addUser("John Doe", 1234, "+1 (111) 111-1111");
-console.log(UserDatabase.users);
+
+//kept returning "zsh: no matches found: console.log(UserDatabase.users)"
 
 
 // you can use these console logs to help you debug loadFromFile()

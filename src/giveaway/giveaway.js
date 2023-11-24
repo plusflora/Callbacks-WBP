@@ -18,13 +18,13 @@
 // YOUR CODE HERE:
 
 function determineCouponRecipients(users, isEligibleForCoupon){
-  const eligibleUsers = []
-  users.forEach(user => {
-    if(isEligibleForCoupon(user)){
-      eligibleUsers.push(user)
+  let eligibleUsers = [] //need a variable
+  users.forEach(user => { //for each user in users we check if 'isEligibleforCoupon' is marked as true and add the user to the 
+    if(isEligibleForCoupon(user)){ //pointing at the function on line 34 and executing this then the pushing of the user
+      eligibleUsers.push(user) // .pushing the user to eligibleUsers
     }
   })
-  return eligibleUsers
+  return eligibleUsers //returning the users
 }
 
 // This is the callback function that will be passed to your function.
