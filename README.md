@@ -1,3 +1,5 @@
+I Don't know if I uploaded this correctly but I edited the files and pushed the whole thing back up onto this repo.
+
 # Callbacks & Arrow Functions
 
 ![Scenario](./util/assets/banner-scenario.png)
